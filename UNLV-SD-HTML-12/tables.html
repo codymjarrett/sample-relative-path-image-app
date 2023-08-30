@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        table {
+            border: 3px solid black;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tfoot {
+            background-color: lightgray;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav li {
+            display: inline;
+        }
+        nav {
+            background-color: gray;
+            padding: 5px;
+          
+        }
+
+        .block {
+            background-color: purple;
+            padding: 5px;
+            margin: 5px;
+            height: 25px;
+            /* width: 500px; */
+        }
+
+        span {
+            background-color: yellow;
+            /* padding: 5px; */
+            padding-top: 5px;
+            display: inline-block;
+            width: 100px; 
+            height: 100px; 
+            margin-top: 10px;
+       
+        }
+
+        #one {
+            background-color: lightblue;
+            height:200px;
+            display: inline-block;
+        }
+        #two {
+            background-color: skyblue;
+            height:100px;
+            display: inline-block;
+
+        }
+        #three {
+            background-color: lavender;
+            height:150px;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2 </a></li>
+        </ul>
+    </nav>
+    <!-- Ordered Lists -->
+    <ol type="1">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+    </ol>
+
+     <!-- Unordered Lists -->
+     <ul type="disc">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+    </ul>
+
+    <!-- Table -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employee Id</th>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Keycards</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td rowspan="2">MKT-001</td> 
+               <td>KerriAnn</td> 
+               <td>Marketing Director</td> 
+               <td>4</td> 
+            </tr>
+            <tr>
+               <td>MKT-002</td> 
+               <td>Mitzy</td> 
+               <td>Engineer</td> 
+               <!-- <td>5</td>  -->
+             
+            </tr>
+            <tr>
+               <td>MKT-001</td> 
+               <td>KerriAnn</td> 
+               <td>Marketing Director</td> 
+               <td>4</td> 
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+             <td colspan="1">Less</td>
+             <td colspan="3">Weird?</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="block">hello world</div>
+    <div class="block">hello world</div>
+    <div class="block">hello world</div>
+    <div class="block">hello world</div>
+    
+    <span>this is inline</span>
+    <span>this is inline</span>
+    <span>this is inline</span>
+    <span>this is inline</span>
+
+
+    <div id="one">inline block one</div>
+    <div id="two">inline block two</div>
+    <div id="three">inline block three</div>
+</body>
+</html>
